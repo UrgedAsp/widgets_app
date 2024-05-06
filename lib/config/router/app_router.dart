@@ -23,12 +23,15 @@ final appRouter = GoRouter(
     GoRoute(
         path: '/progress',
         name: ProgressScreen.name,
-        builder: (context, state) => const ProgressScreen()
-    ),
+        builder: (context, state) => const ProgressScreen()),
     GoRoute(
         path: '/snackbars',
         name: SnackBarScreen.name,
-        builder: (context, state) => const SnackBarScreen()
+        builder: (context, state) => const SnackBarScreen()),
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name,
+      builder: (context, state) => const AnimatedScreen(),
     )
   ],
 );

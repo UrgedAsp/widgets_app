@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
-import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
-import 'package:widgets_app/presentation/screens/progress/progress_screen.dart';
-import 'package:widgets_app/presentation/screens/snackbar/snackbar_screen.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
 class MenuItem {
   final String title;
@@ -38,4 +35,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Indicadores en pantalla',
       link: SnackBarScreen.name,
       icon: Icons.info_outline),
+  MenuItem(
+      title: 'Animated container',
+      subTitle: 'Stateful widget animado',
+      link: AnimatedScreen.name,
+      icon: Icons.check_box_outline_blank_rounded)
 ];
